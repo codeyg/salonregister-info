@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy | SalonRegister</title>
+<meta name="description" content="Privacy Policy — SalonRegister">
+<style>
+:root{--ink:#13232b;--muted:#53666a;--accent:#12656b;--line:#dce5e5;--paper:#fff;--bg:#f5f8f7}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,'Segoe UI',sans-serif}
+header{background:#0d3237;color:#fff;padding:32px max(22px,calc((100vw - 860px)/2))}
+.brand{font-weight:750;font-size:1.55rem;letter-spacing:-.025em}header p{color:#c5dedf;margin:3px 0 0}
+nav{display:flex;gap:19px;flex-wrap:wrap;padding-top:18px}nav a{color:#d1f3ee;text-decoration:none;font-size:14px}
+main{max-width:860px;margin:28px auto;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:30px 38px 48px;box-shadow:0 2px 12px #163d3b0b}
+h1{font-size:2rem;line-height:1.2;margin:.2em 0}h2{font-size:1.19rem;margin:1.7em 0 .5em;color:#0d555b}
+p,li{color:#273f46}ul{padding-left:25px}li{margin:4px 0}.meta{font-size:14px;color:var(--muted);margin-bottom:25px}
+.note{background:#fff5df;border-left:4px solid #ba841f;padding:13px 16px;border-radius:4px;margin:22px 0;color:#4c3b20}
+a{color:var(--accent)}footer{max-width:860px;margin:0 auto 30px;padding:12px 6px;color:var(--muted);font-size:13px}
+@media(max-width:650px){header{padding:25px 21px}main{padding:23px 19px;margin:13px;border-radius:10px}}
+
+.brand a{color:#fff;text-decoration:none}
+nav a[aria-current="page"]{font-weight:750;color:#fff;text-decoration:underline;text-underline-offset:5px}
+main h1{letter-spacing:-.018em}
+.contact{border-top:1px solid var(--line);margin-top:35px;padding-top:15px}
+.reveal{background:#eaf5f2;border:1px solid #b6d3ce;border-radius:8px;color:#0d555b;font-size:14px;font-weight:700;padding:10px 14px;cursor:pointer}
+.reveal:hover,.reveal:focus-visible{background:#d9efe9}
+.contact-link{overflow-wrap:anywhere}
+footer a{color:var(--accent);margin-left:14px}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand"><a href="index.html">SalonRegister</a></div>
+  <p>A digital register for salons</p>
+  <nav aria-label="Main navigation"><a href="index.html">Home</a><a href="privacy.html" aria-current="page">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="deletion.html">Data Deletion</a></nav>
+</header>
+<main>
+
+<h1>Privacy Policy</h1>
+<p class="date">Last updated: 18 November 2026</p>
+<p>This policy explains how SalonRegister handles personal information when providing its service.</p>
+<h2>Information we collect</h2>
+<p>We may collect salon and staff names, phone numbers, WhatsApp messages or voice notes, submitted transaction details, and basic account and technical information.</p>
+<h2>How we use it</h2>
+<p>We use this information to provide the service, maintain business records, manage access, respond to messages, and provide support.</p>
+<h2>Sharing and access</h2>
+<p>We use messaging, hosting, and, where applicable, AI-processing service providers. Relevant messages or voice notes may be processed by these providers. Authorized salon owners can access their salon's records; service administrators may access information when necessary to operate or support the service. We do not sell personal or salon transaction information.</p>
+<h2>Retention and security</h2>
+<p>Raw message content is generally cleared from our processing records after handling. Transaction and account records may be retained as needed for the service or legitimate legal and business purposes. We use access controls to restrict access, but no system is completely secure. Other providers and salon owners may retain copies under their own control.</p>
+<h2>Your requests</h2>
+<p>You can request access, correction, or deletion of your personal information. We may verify your identity or authority before acting, and some information may need to be retained where legally required. See <a href="deletion.html">Data Deletion Instructions</a>.</p>
+<p>We may update this policy and show the new effective date here.</p>
+<section aria-label="Contact" class="contact"><h2>Contact</h2><p>For support or privacy questions, contact SalonRegister:</p><button class="reveal" data-show-contact="" type="button">Show support email</button><noscript><p>Support email: salonregister.support [at] gmail [dot] com</p></noscript></section>
+
+</main>
+<footer>© 2026 SalonRegister <a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="deletion.html">Data Deletion</a></footer>
+<script>
+document.querySelectorAll('[data-show-contact]').forEach(function(button){
+  button.addEventListener('click',function(){
+    const address=['salonregister','support'].join('.')+String.fromCharCode(64)+['gmail','com'].join('.');
+    const link=document.createElement('a');
+    link.href='mailto:'+address;
+    link.textContent=address;
+    link.className='contact-link';
+    button.replaceWith(link);
+  });
+});
+</script>
+</body>
+</html>
